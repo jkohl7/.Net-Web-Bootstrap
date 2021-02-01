@@ -15,6 +15,18 @@
      <!-- Custom Icons -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="custom.css">
+    <!-- toast -->
+    <div id="toast" class="toast">
+        <div class="toast-header">
+            <strong class="mr-auto" id="product">Product Name</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Discount Code: <strong id="code">12345</strong>
+        </div>
+     </div>
     </head>
 </head>
 <body>
@@ -48,7 +60,7 @@
             </form>
         </div>  
     </nav>
-    <div class="container-sm">
+    <div class="container-fluid">
     <div class="jumbotron">
         <h1 class="display-4">Northwind</h1>
         <p class="lead">We have the best prices and selection of high quality foods and beverages on the planet! Check out our featured discounts below. </p>
@@ -57,6 +69,36 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">Order Now</a>
       </div>
     </div>
+
+       <!-- grid -->
+       <div class="row">
+        <div class="col-md m-3 p-3 discounts">
+            <h3>Tis the seasoning</h3>
+            <div class="mb-4">
+                Order today! Save 12.5% on Chef Anton's Italian Seasoning.
+                You don't want to make Chef Anton mad, do you?
+            </div>
+            <i>Discount expires: 2/25/2021</i><br />
+            <a href="#" class="code"><i class="mdi mdi-arrow-right-bold-circle"></i>Discount Code </a>
+        
+        </div>
+        <div class="col-md m-3 p-3 discounts">
+            <h3>Go Green!</h3>
+            <div class="mb-4">
+                Grenen Shouyu goes on sale very rarely. Order now to save 10% off our already low price.
+            </div>
+            <i>Discount expires: 2/25/2021</i><br />
+            <a href="#" class="code"><i class="mdi mdi-arrow-right-bold-circle"></i>Discount Code </a>
+        </div>
+        <div class="col-md m-3 p-3 discounts">
+            <h3>Half Price</h3>
+            <div class="mb-4">
+                Just because you can't pronounce "Schoggi Schokolade" doesn't mean you shouldn't buy it. Get it now for 50% off!
+            </div>
+            <i>Discount expires: 2/25/2021</i><br />
+            <a href="#" class="code"><i class="mdi mdi-arrow-right-bold-circle"></i>Discount Code </a>
+        </div>
+    </div>
       
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -64,5 +106,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <!-- bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <!-- custom js-->
+     <script src="client.js"></script>
 </body>
 </html>
